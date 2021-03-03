@@ -1,0 +1,23 @@
+body {
+    background-color: #ebeff5;
+}
+
+#time-vencedor {
+    background-color: #4cb4c7;
+}
+
+#melhor-geral {
+    background-color: #cc7a7a;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ebeff5;
+}
+
+.display-3 {
+    color: #0a0a09;
+}

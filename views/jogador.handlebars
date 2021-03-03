@@ -1,0 +1,89 @@
+<main role="main">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">
+                Resultados da Partida
+            </h1>
+        </div>
+    </div>
+</main>
+
+<br>
+
+<div class="row">
+    <div class="col">
+        <div class="col-md">
+            <div class="card text-center text-white mb-3" id="time-vencedor">
+                <div class="card-header">
+                    <h5 class="card-title">
+                        Time Vencedor
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">
+                        {{vencedor}}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="col-md">
+            <div class="card text-center text-white mb-3" id="melhor-geral">
+                <div class="card-header">
+                    <h5 class="card-title">
+                        Melhor Jogador da Partida
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">
+                        {{melhor}}
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col">
+        <div class="col-md">
+            <h5>
+                Ranking
+            </h5>
+            <hr>
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome do Jogador</th>
+                            <th scope="col">Pontuação</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Número de Head Shots</th>
+                            <th scope="col">Arma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each jogadores}}
+                            <tr>
+                                <td>{{nome}}</td>
+                                <td>{{pontuacao}}</td>
+                                <td>{{time}}</td>
+                                <td>{{hs_num}}</td>
+                                <td>{{arma}}</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
